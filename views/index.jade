@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  //Wrapper
+  #wrapper
+       // SONG INFO
+       #songInfo
+           h2 Song Info
+           p
+                strong Artist:
+                |  <span id='songInfoArtist'></span>
+                br
+                strong Song:
+                |  <span id='songInfoSong'></span>
+                br
+                strong Lyrics:
+                |  <span id='songInfoLyrics'></span>
+                br
+                strong URL:
+                |  <span id='songInfoUrl'></span>
+       // /SONG INFO
+
+       // SONG LIST
+       h2 Song List
+       #songList
+          table
+            thead
+                th Artist
+                th Song
+                th Delete?
+            tbody
+       // /SONG LIST
+
+  // /WRAPPER
